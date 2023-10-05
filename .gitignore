@@ -1,9 +1,10 @@
-# maven
-**/target
-**/build
+**/target/
+**/build/
 **/out
 
-# eclipse
+#eclipse
 **/.settings
 **/.classpath
 **/.project
+
+/.idea/
