@@ -1,9 +1,9 @@
-## maven
-**/target/
-**/build/
+# maven
+**/target
+**/build
 **/out
 
-## eclipse
+# eclipse
 **/.settings
 **/.classpath
 **/.project
