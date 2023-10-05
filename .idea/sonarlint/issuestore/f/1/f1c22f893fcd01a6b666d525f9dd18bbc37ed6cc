@@ -1,0 +1,6 @@
+
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø—ê8ºıûú¯1
+r	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ºïÃøÿÿÿÿ8»ıûú¯1
+w	java:S116"VRename this field "category_no" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ë×ûÿÿÿÿ8Áıûú¯1
+o	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã™à²úÿÿÿÿ8Æıûú¯1
+o	java:S1005"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ºïÃøÿÿÿÿ8Æıûú¯1
