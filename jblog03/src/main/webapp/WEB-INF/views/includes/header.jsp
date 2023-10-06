@@ -10,12 +10,14 @@
 			<li><a href="${pageContext.request.contextPath}/user/login">로그인</a></li>
 			<li><a href="${pageContext.request.contextPath}/user/join">회원가입</a></li>
 			<li><a href="${pageContext.request.contextPath}/blog/index">블로그</a></li>
+			<li><a href="${pageContext.request.contextPath}/">메인으로 이동하기</a></li>
 		</c:when>
 		<c:otherwise>
+			<li>${authUser.name } 님 반갑습니다.</li>
 			<li><a href="${pageContext.request.contextPath}/user/logout">로그아웃</a></li>
 			<li><a href="${pageContext.request.contextPath}/blog/${authUser.id }/admin">블로그관리</a></li>
 			<li><a href="${pageContext.request.contextPath}/blog/${authUser.id }">블로그</a></li>
+			<li><a href="${pageContext.request.contextPath}/">메인 이동하기</a></li>
 		</c:otherwise>
 	</c:choose>
 </ul>
-<%--<a href="${pageContext.request.contextPath }/" ><h1 class="logo">JBlog</h1></a>--%>
