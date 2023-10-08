@@ -1,3 +1,8 @@
 
-Q
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8€ü›î¯1
+j
+java:S1192Y"MDefine a constant instead of duplicating this literal "selectedPage" 3 times.(„·«ô8œ³Êõ°1
+f
+java:S1192R"IDefine a constant instead of duplicating this literal "authUser" 3 times.(’±±‡8³Êõ°1
+l
+java:S1192V"ODefine a constant instead of duplicating this literal "redirect:/{id}" 4 times.(ìòœ™8³Êõ°1
+M	java:S106"+Replace this use of System.out by a logger.(—êĞïÿÿÿÿÿ8à³Êõ°1

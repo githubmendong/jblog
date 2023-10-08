@@ -14,26 +14,25 @@ public class UserRepository {
 	@Autowired
 	private SqlSession sqlSession;
 
-	// 회원가입
-	public boolean insert(UserVo vo) {
-		int count = sqlSession.insert("user.insert", vo);
+	public Boolean insert(UserVo userVo) {
+		int count = sqlSession.insert("user.insert", userVo);
 		return count == 1;
 	}
 
-	// 로그인
 	public UserVo findByIdAndPassword(String id, String password) {
 		Map<String, Object> map = new HashMap<>();
 		map.put("id", id);
 		map.put("password", password);
 
-		UserVo result = sqlSession.selectOne("user.findByIdAndPassword", map);
-
-		return result;
+		return sqlSession.selectOne("user.findByIdAndPassword", map);
 	}
 
-	// 아이디 체크
-	public boolean checkId(String id) {
-		int count = sqlSession.selectOne("user.checkId", id);
-		return  count > 0;
+	public UserVo findById(String id) {
+		return sqlSession.selectOne("user.findById",id);
+	}
+
+	public Boolean update(UserVo vo) {
+		int count = sqlSession.update("user.update", vo);
+		return count == 1;
 	}
 }

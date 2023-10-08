@@ -1,0 +1,16 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ž÷úž
+b
+java:S2259""LA "NullPointerException" could be thrown; "originFilename" is nullable here.(™ÄŸÆ
+o
+java:S3008"TRename this field "SAVE_PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÜøÛýÿÿÿÿ
+n
+java:S3008"SRename this field "URL_PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸×œòþÿÿÿÿ
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ôÜøÛýÿÿÿÿ
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(¸×œòþÿÿÿÿ
+W
+java:S1854$"<Remove this useless assignment to local variable "fileSize".(¬ëñÊýÿÿÿÿ
+H
+java:S1481$"-Remove this unused "fileSize" local variable.(¬ëñÊýÿÿÿÿ

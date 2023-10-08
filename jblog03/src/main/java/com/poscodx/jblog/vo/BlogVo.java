@@ -1,27 +1,9 @@
 package com.poscodx.jblog.vo;
 
 public class BlogVo {
-	private String blog_id;
 	private String title;
 	private String image;
-
-	public BlogVo() {
-	}
-
-	public BlogVo(String blog_id, String title, String image) {
-		super();
-		this.blog_id = blog_id;
-		this.title = title;
-		this.image = image;
-	}
-
-	public String getBlog_id() {
-		return blog_id;
-	}
-
-	public void setBlog_id(String blog_id) {
-		this.blog_id = blog_id;
-	}
+	private String blogId;
 
 	public String getTitle() {
 		return title;
@@ -39,10 +21,17 @@ public class BlogVo {
 		this.image = image;
 	}
 
-	@Override
-	public String toString() {
-		return "BlogVo [blog_id=" + blog_id + ", title=" + title + ", image=" + image + "]";
+	public String getBlogId() {
+		return blogId;
 	}
 
+	public void setBlogId(String blogId) {
+		this.blogId = blogId;
+	}
+
+	@Override
+	public String toString() {
+		return "BlogVo [title=" + title + ", image=" + image + ", blogId=" + blogId + "]";
+	}
 
 }

@@ -27,16 +27,18 @@
 	<!-- Interceptors -->
 	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/user/auth" />
+			<mvc:mapping path="/user/auth"/>
 			<bean class="com.poscodx.jblog.security.LoginInterceptor" />
 		</mvc:interceptor>
-
 		<mvc:interceptor>
-			<mvc:mapping path="/user/logout" />
+			<mvc:mapping path="/user/logout"/>
 			<bean class="com.poscodx.jblog.security.LogoutInterceptor" />
 		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/*/admin/*"/>
+			<bean class="com.poscodx.jblog.security.AuthInterceptor" />
+		</mvc:interceptor>
 	</mvc:interceptors>
-
 
 	<!-- Multipart Resolver -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -49,7 +51,9 @@
 	</bean>
 
 	<!-- mvc url-resource mapping -->
-	<mvc:resources mapping="/assets/upload-images/**" location="file:/jblog-uploads/" />
+	<mvc:resources mapping="/assets/upload-image/**" location="file:/jblog-uploads/" />
+
+
 	<!-- View Resolver -->
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />

@@ -1,27 +1,16 @@
 package com.poscodx.jblog.vo;
 
+import javax.validation.constraints.NotEmpty;
+
 public class CategoryVo {
+
 	private Long no;
+	@NotEmpty
 	private String name;
 	private String description;
-	private String blog_id;
-	private Long postNum;
-
-	public CategoryVo() {
-	}
-
-
-
-	public CategoryVo(Long no, String name, String description, String blog_id, Long postNum) {
-		super();
-		this.no = no;
-		this.name = name;
-		this.description = description;
-		this.blog_id = blog_id;
-		this.postNum = postNum;
-	}
-
-
+	@NotEmpty
+	private String blogId;
+	private int postCount;
 
 	public Long getNo() {
 		return no;
@@ -47,35 +36,26 @@ public class CategoryVo {
 		this.description = description;
 	}
 
-	public String getBlog_id() {
-		return blog_id;
+	public String getBlogId() {
+		return blogId;
 	}
 
-	public void setBlog_id(String blog_id) {
-		this.blog_id = blog_id;
+	public void setBlogId(String blogId) {
+		this.blogId = blogId;
 	}
 
-
-
-	public Long getPostNum() {
-		return postNum;
+	public int getPostCount() {
+		return postCount;
 	}
 
-
-
-	public void setPostNum(Long postNum) {
-		this.postNum = postNum;
+	public void setPostCount(int postCount) {
+		this.postCount = postCount;
 	}
-
-
 
 	@Override
 	public String toString() {
-		return "CategoryVo [no=" + no + ", name=" + name + ", description=" + description + ", blog_id=" + blog_id
-				+ ", postNum=" + postNum + "]";
+		return "CategoryVo [no=" + no + ", name=" + name + ", description=" + description + ", blogId=" + blogId
+				+ ", postCount=" + postCount + "]";
 	}
-
-
-
 
 }

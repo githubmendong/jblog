@@ -20,13 +20,10 @@
 
     <ul class='menu'>
         <c:import url="/WEB-INF/views/includes/header.jsp"/>
-
-
-
         <!-- 입력창 HTML 코드 -->
-        <div class='search-wrapper' action='https://search.naver.com/search.naver' method='GET' >
+        <div class='search-wrapper' action='https://search.naver.com/search.naver' method='GET'>
             <div class='input-holder'>
-                <input type='text' class="search-input" name='query' id='searchInput' placeholder='검색'/>
+                <input type='submit' class="search-input" name='query' id='searchInput' placeholder='검색'/>
                 <button class='search-icon' onclick='searchToggle(this, event);'><span></span></button>
             </div>
             <span class='close' onclick='searchToggle(this, event);'></span>

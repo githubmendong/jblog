@@ -1,26 +1,20 @@
 package com.poscodx.jblog.vo;
 
+import javax.validation.constraints.NotEmpty;
+
+import org.hibernate.validator.constraints.Length;
+
 public class PostVo {
-
 	private Long no;
+	@NotEmpty
+	@Length(max = 100)
 	private String title;
+
+	@NotEmpty
+	@Length(min = 1)
 	private String contents;
-	private Long category_no;
+	private Long categoryNo;
 	private String date;
-
-	public PostVo() {
-	}
-
-
-	public PostVo(Long no, String title, String contents, Long category_no, String date) {
-		super();
-		this.no = no;
-		this.title = title;
-		this.contents = contents;
-		this.category_no = category_no;
-		this.date = date;
-	}
-
 
 	public Long getNo() {
 		return no;
@@ -46,30 +40,29 @@ public class PostVo {
 		this.contents = contents;
 	}
 
-	public Long getCategory_no() {
-		return category_no;
+	public Long getCategoryNo() {
+		return categoryNo;
 	}
 
-	public void setCategory_no(Long category_no) {
-		this.category_no = category_no;
+	public void setCategoryNo(Long categoryNo) {
+		this.categoryNo = categoryNo;
 	}
+
+
 
 	public String getDate() {
 		return date;
 	}
 
-
 	public void setDate(String date) {
 		this.date = date;
 	}
 
-
 	@Override
 	public String toString() {
-		return "PostVo [no=" + no + ", title=" + title + ", contents=" + contents + ", category_no=" + category_no
+		return "PostVo [no=" + no + ", title=" + title + ", contents=" + contents + ", categoryNo=" + categoryNo
 				+ ", date=" + date + "]";
 	}
-
 
 
 }

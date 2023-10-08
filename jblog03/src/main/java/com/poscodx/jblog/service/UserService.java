@@ -2,6 +2,7 @@ package com.poscodx.jblog.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.poscodx.jblog.repository.UserRepository;
 import com.poscodx.jblog.vo.UserVo;
 
@@ -10,15 +11,21 @@ public class UserService {
 	@Autowired
 	private UserRepository userRepository;
 
-	public void join(UserVo userVo) {
-		userRepository.insert(userVo);
+	public boolean addUser(UserVo vo) {
+		return userRepository.insert(vo);
 	}
 
 	public UserVo getUser(String id, String password) {
 		return userRepository.findByIdAndPassword(id, password);
 	}
 
-//	public boolean checkId(String id) {
-//		return userRepository.checkId(id);
-//	}
+	public UserVo getUser(String id) {
+		return userRepository.findById(id);
+	}
+
+	public boolean updateUser(UserVo userVo) {
+		return userRepository.update(userVo);
+	}
+
+
 }
