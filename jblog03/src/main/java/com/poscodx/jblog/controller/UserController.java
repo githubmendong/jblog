@@ -43,7 +43,7 @@ public class UserController {
             for (ObjectError error : errors) {
                 System.out.println(error);
             }
-            model.addAllAttributes(result.getModel()); // Output as a Map
+            model.addAllAttributes(result.getModel());
             return "user/join";
         }
         // 1. Add user

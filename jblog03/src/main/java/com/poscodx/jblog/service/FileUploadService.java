@@ -27,12 +27,9 @@ public class FileUploadService {
 				uploadDirectory.mkdirs();
 			}
 
-			// 사용자가 파일을 선택 안함
 			if (file.isEmpty()) {
 				return url;
 			}
-
-			// 파일 정보 수집
 			String originFileName = file.getOriginalFilename();
 			String extName = originFileName.substring(originFileName.lastIndexOf(".") + 1);
 			String saveFileName = generateSaveFilename(extName);
