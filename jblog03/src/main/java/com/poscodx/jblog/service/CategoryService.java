@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.poscodx.jblog.repository.CategoryRepository;
 import com.poscodx.jblog.vo.CategoryVo;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class CategoryService {
@@ -24,6 +25,8 @@ public class CategoryService {
 		categoryRepository.insert(vo);
 	}
 
+
+	@Transactional
 	public void deleteCategory(Long no) {
 		categoryRepository.delete(no);
 	}
