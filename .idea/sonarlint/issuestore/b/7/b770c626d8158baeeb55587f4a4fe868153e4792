@@ -1,8 +1,27 @@
 
-j
-java:S1192Y"MDefine a constant instead of duplicating this literal "selectedPage" 3 times.(„·«ô8œ³Êõ°1
-f
-java:S1192R"IDefine a constant instead of duplicating this literal "authUser" 3 times.(’±±‡8³Êõ°1
+h
+java:S11921"KDefine a constant instead of duplicating this literal "redirect:/" 4 times.(äÔ¶½8í¤Ëş°1
+o
+java:S11925"MDefine a constant instead of duplicating this literal "categoryList" 4 times.(ø¤òùÿÿÿÿ8í¤Ëş°1
+i
+java:S11923"GDefine a constant instead of duplicating this literal "blogVo" 5 times.(áú¡Šúÿÿÿÿ8î¤Ëş°1
+v
+java:S3655@"TCall "categoryNo.isPresent()" or "!categoryNo.isEmpty()" before accessing the value.(Ö«š˜ÿÿÿÿÿ8û¤Ëş°1
+e
+java:S4488J"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(“õ£­8¥Ëş°1
 l
-java:S1192V"ODefine a constant instead of duplicating this literal "redirect:/{id}" 4 times.(ìòœ™8³Êõ°1
-M	java:S106"+Replace this use of System.out by a logger.(—êĞïÿÿÿÿÿ8à³Êõ°1
+java:S4488Q"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÇÉĞªúÿÿÿÿ8‚¥Ëş°1
+e
+java:S4488a"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(½³‘8ƒ¥Ëş°1
+l
+java:S4488s"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(âÇ©ûÿÿÿÿ8„¥Ëş°1
+j
+java:S4488z"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(—‡Æüÿÿÿÿ8…¥Ëş°1
+h
+java:S4488„"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(àÍ‡¾8†¥Ëş°1
+k
+java:S1128"IRemove this unused import 'org.springframework.validation.BindingResult'.(‹¶¸ùÿÿÿÿ8±ÌĞş°1
+X
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8±ÌĞş°1
+U
+java:S1128"3Remove this unused import 'javax.validation.Valid'.(æ¤ñ÷úÿÿÿÿ8±ÌĞş°1

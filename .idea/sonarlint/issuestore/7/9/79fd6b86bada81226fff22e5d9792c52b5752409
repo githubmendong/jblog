@@ -1,0 +1,16 @@
+
+j
+java:S1192&"HDefine a constant instead of duplicating this literal "#######" 3 times.(şµªşÿÿÿÿÿ8€Ößü°1
+n
+java:S2259""LA "NullPointerException" could be thrown; "originFileName" is nullable here.(†ûÆÔùÿÿÿÿ8’Ößü°1
+v
+java:S3008"TRename this field "SAVE_PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÜøÛıÿÿÿÿ8“Ößü°1
+p
+java:S3008"SRename this field "URL_PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÇ–8“Ößü°1
+c
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ôÜøÛıÿÿÿÿ8•Ößü°1
+^
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ªÇ–8˜Ößü°1
+L	java:S106&"+Replace this use of System.out by a logger.(şµªşÿÿÿÿÿ8Ößü°1
+L	java:S106'"+Replace this use of System.out by a logger.(ğÓşÿúÿÿÿÿ8Ößü°1
+L	java:S106("+Replace this use of System.out by a logger.(˜â£¡úÿÿÿÿ8 Ößü°1

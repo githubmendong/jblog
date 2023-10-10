@@ -2,6 +2,7 @@ package com.poscodx.jblog.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
@@ -36,36 +37,41 @@ public class UserController {
         return "user/join";
     }
 
+    @Transactional
     @PostMapping("/join")
     public String join(@ModelAttribute @Valid UserVo userVo, BindingResult result, Model model) {
+        String res = "redirect:/user/joinsuccess";
         if (result.hasErrors()) {
             List<ObjectError> errors = result.getAllErrors();
             for (ObjectError error : errors) {
                 System.out.println(error);
             }
             model.addAllAttributes(result.getModel());
-            return "user/join";
+            res = "user/join";
+        } else {
+            // 1. Add user
+            userService.addUser(userVo);
+
+            // 2. Set up the default blog
+            BlogVo blogVo = new BlogVo();
+            blogVo.setTitle(userVo.getName() + "'s Blog");
+            blogVo.setBlogId(userVo.getId());
+            blogVo.setImage("/assets/images/default.jpg");
+            System.out.println(blogVo);
+            blogService.addBlog(blogVo);
+
+            // 3. Create an uncategorized category
+            CategoryVo categoryVo = new CategoryVo();
+            categoryVo.setBlogId(userVo.getId());
+            categoryVo.setName("Uncategorized");
+            categoryVo.setDescription("Category for uncategorized posts.");
+            categoryService.addCategory(categoryVo);
         }
-        // 1. Add user
-        userService.addUser(userVo);
 
-        // 2. Set up the default blog
-        BlogVo blogVo = new BlogVo();
-        blogVo.setTitle(userVo.getName() + "'s Blog");
-        blogVo.setBlogId(userVo.getId());
-        blogVo.setImage("/assets/images/default.jpg");
-        System.out.println(blogVo);
-        blogService.addBlog(blogVo);
-
-        // 3. Create an uncategorized category
-        CategoryVo categoryVo = new CategoryVo();
-        categoryVo.setBlogId(userVo.getId());
-        categoryVo.setName("Uncategorized");
-        categoryVo.setDescription("Category for uncategorized posts.");
-        categoryService.addCategory(categoryVo);
-
-        return "redirect:/user/joinsuccess";
+        return res;
     }
+
+
 
     @GetMapping("/joinsuccess")
     public String joinSuccess() {

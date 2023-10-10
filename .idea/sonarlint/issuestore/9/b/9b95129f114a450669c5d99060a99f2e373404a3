@@ -1,2 +1,9 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(˜ª€Íÿÿÿÿÿ
+Y
+java:S1854"<Remove this useless assignment to local variable "taskName".(Ó¶ÉÌ8’É®ý°1
+_
+java:S1854"=Remove this useless assignment to local variable "totalTime".(ñ£êðùÿÿÿÿ8’É®ý°1
+P
+java:S1481".Remove this unused "totalTime" local variable.(ñ£êðùÿÿÿÿ8•É®ý°1
+J
+java:S1481"-Remove this unused "taskName" local variable.(Ó¶ÉÌ8•É®ý°1
