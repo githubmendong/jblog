@@ -22,6 +22,7 @@ public class CategoryRepository {
 		return count == 1;
 	}
 
+
 	public void delete(Long no) {
 		sqlSession.delete("post.deleteByNo",no);
 		sqlSession.delete("category.deleteByNo",no);

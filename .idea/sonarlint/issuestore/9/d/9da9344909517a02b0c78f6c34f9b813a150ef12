@@ -1,6 +1,15 @@
 
-L	java:S106,"+Replace this use of System.out by a logger.(ÆÎ±Üûÿÿÿÿ8ðæšÿ°1
-F	java:S1069"+Replace this use of System.out by a logger.(úñÃV8òæšÿ°1
+L	java:S106."+Replace this use of System.out by a logger.(ÆÎ±Üûÿÿÿÿ8âî«È±1
 ^
-java:S2441Z"<Make "UserVo" serializable or don't store it in the session.(Ø­„æýÿÿÿÿ8ùæšÿ°1
-L	java:S106["+Replace this use of System.out by a logger.(æéª·úÿÿÿÿ8úæšÿ°1
+java:S2441S"<Make "UserVo" serializable or don't store it in the session.(Ø­„æýÿÿÿÿ8åî«È±1
+L	java:S106T"+Replace this use of System.out by a logger.(æéª·úÿÿÿÿ8åî«È±1
+w
+java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ðùçøùÿÿÿÿ8ÉþÈ±1
+U
+java:S1128"8Remove this unused import 'com.poscodx.jblog.vo.BlogVo'.(Üøÿ¨8ËþÈ±1
+Y
+java:S1128"<Remove this unused import 'com.poscodx.jblog.vo.CategoryVo'.(§þÍ‰8ÍþÈ±1
+L
+java:S1068"/Remove this unused "blogService" private field.( ÎÄ8æî«È±1
+P
+java:S1068"3Remove this unused "categoryService" private field.(žå³Î8æî«È±1

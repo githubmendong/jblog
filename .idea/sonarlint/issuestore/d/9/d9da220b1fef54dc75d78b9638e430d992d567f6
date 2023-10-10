@@ -1,0 +1,14 @@
+
+c
+java:S1192&"HDefine a constant instead of duplicating this literal "#######" 3 times.(ώµªώÿÿÿÿÿ
+o
+java:S3008"TRename this field "SAVE_PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(τάψΫύÿÿÿÿ
+i
+java:S3008"SRename this field "URL_PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªΗ–
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(τάψΫύÿÿÿÿ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ªΗ–
+E	java:S106&"+Replace this use of System.out by a logger.(ώµªώÿÿÿÿÿ
+E	java:S106'"+Replace this use of System.out by a logger.(πΣώÿϊÿÿÿÿ
+E	java:S106("+Replace this use of System.out by a logger.(β£΅ϊÿÿÿÿ

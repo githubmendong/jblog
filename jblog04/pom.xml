@@ -7,7 +7,7 @@
 		<artifactId>jblog</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jblog03</artifactId>
+	<artifactId>jblog04</artifactId>
 	<packaging>war</packaging>
 
 
@@ -132,6 +132,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>jblog03</finalName>
+		<finalName>jblog04</finalName>
 	</build>
 </project>

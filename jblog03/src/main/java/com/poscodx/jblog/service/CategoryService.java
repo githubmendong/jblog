@@ -28,6 +28,7 @@ public class CategoryService {
 
 	@Transactional
 	public void deleteCategory(Long no) {
+
 		categoryRepository.delete(no);
 	}
 
