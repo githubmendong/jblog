@@ -5,3 +5,23 @@ h
 java:S11925"MDefine a constant instead of duplicating this literal "categoryList" 4 times.(ø¤òùÿÿÿÿ
 b
 java:S11923"GDefine a constant instead of duplicating this literal "blogVo" 5 times.(áú¡Šúÿÿÿÿ
+v
+java:S3655@"TCall "categoryNo.isPresent()" or "!categoryNo.isEmpty()" before accessing the value.(Ö«š˜ÿÿÿÿÿ8ÔŞãË±1
+e
+java:S4488J"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(“õ£­8áŞãË±1
+l
+java:S4488Q"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÇÉĞªúÿÿÿÿ8ãŞãË±1
+e
+java:S4488a"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(½³‘8ëŞãË±1
+l
+java:S4488s"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(âÇ©ûÿÿÿÿ8ğŞãË±1
+j
+java:S4488z"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(—‡Æüÿÿÿÿ8õŞãË±1
+h
+java:S4488„"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(àÍ‡¾8ùŞãË±1
+k
+java:S1128"IRemove this unused import 'org.springframework.validation.BindingResult'.(‹¶¸ùÿÿÿÿ8ûŞãË±1
+X
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8ûŞãË±1
+U
+java:S1128"3Remove this unused import 'javax.validation.Valid'.(æ¤ñ÷úÿÿÿÿ8üŞãË±1
